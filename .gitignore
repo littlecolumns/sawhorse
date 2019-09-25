@@ -1,4 +1,7 @@
 
+# Ignoring dist folder in favor of docs folder for publishing
+dist
+
 # Created by https://www.gitignore.io/api/osx,node,linux,windows,sublimetext,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=osx,node,linux,windows,sublimetext,visualstudiocode
 

@@ -2,13 +2,13 @@
 	"headline": "Title Goes Here",
 	"subhead": "Subhead goes here. Edit these in metadata/meta.json.",
 	"published_date": "January 1, 1970",
-	"site": "https://www.littlecolumns.com",
+	"site": "http://www.littlecolumns.com",
 	"siteName": "Little Columns",
 	"url": "http://littlecolumns.com/learn/d3-javascript-tooling/",
 	"kicker": "Little Columns Project Template",
 	"author": {
 		"name": "Jonathan Soma",
-		"url": "https://jonathansoma.com",
+		"url": "http://jonathansoma.com/",
 		"twitterHandle": "@dangerscarf"
 	},
 	"analytics": "",
