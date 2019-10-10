@@ -36,6 +36,7 @@ Visit `localhost:1234` and life should be good.
 
 * `/src` is for your [actual web pages](#making-new-pages)
 * `/src/html` is for your [HTML partials](#using-partials)
+* `/src/html/layouts` is for your [layout files](#using-layouts)
 * `/src/data` is for your [data files](#using-data)
 * `/src/scripts` is for your [JavaScript code](#using-javascript)
 * `/src/images` is for your [images](#using-images)
@@ -85,6 +86,10 @@ To use a partial, you add code to tell Handlebars to include it on a certain pag
 This isn't anything magic, it just says "go get a partial called `navbar.hbs` from the `base` folder." See `src/index.hbs` for details.
 
 Folder names aren't magic, either - if I made a folder called `homework-07` and put `bar-chart.hbs` inside of it, I could then start including it with `{{> homework-07/bar-chart }}`
+
+### Using layouts
+
+Inside of `src/html/layouts` you have templates for web pages. If you have different kinds of pages - some with bootstrap, some with the class template - you can make multiple layouts. If all of your pages look the same, you won't need to worry about it.
 
 ### Using data
 
