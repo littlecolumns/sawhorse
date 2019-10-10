@@ -155,7 +155,7 @@ Refresh your page, and the graphic should show up *and* be responsive *and* you 
 
 **Please note** that yours won't be called `illustrator_demo`. The filename isn't special, it's just the default because my Illustrator file was `illustrator_demo.ai`.
 
-> If you're getting an error that sawhorse can't find `src/filename.png`, it's because your ai2html export doesn't put the images into an `/images/` folder. Instead, it put them in the same folder as the HTML. You can fix this by editing the `img src="filename.png"` in your ai2html file to be `img src="images/filename.png"`
+> If you're getting an error that sawhorse can't find `src/filename.png`, it's because your ai2html export doesn't put the images into an `/images/` folder. Instead, it put them in the same folder as the HTML. You can fix this by editing all of the `img src="filename.png"` mentions in your ai2html file to be `img src="images/filename.png"`
 
 # Publishing to GitHub Pages
 
