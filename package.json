@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "testcafe chrome ./tests/acceptance/**  --app \"npm run start\"",
-    "start": "node src/template.js --",
+    "start": "parcel src/index.hbs --no-hmr",
     "build": "parcel build src/index.hbs --out-dir docs --public-url '.'"
   },
   "repository": {

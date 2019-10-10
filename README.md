@@ -18,7 +18,21 @@ That will install the `sawhorse` command, which you can then use to create a new
 sawhorse create my-project
 ```
 
+Once you've done that, you can go into the directory, install the dependencies, and fire up a server.
+
+```
+cd my-project
+npm install
+npm run start
+```
+
+Visit `localhost:1234` and life should be good.
+
 # How to customize sawhorse
+
+To see whats' going on, it's best to just take a look at `src/index.hbs`, then poke around the other folders/files in `src`.
+
+## The setup
 
 * `/src` is for your [actual web pages](#making-new-pages)
 * `/src/html` is for your [HTML partials](#using-paritals)
