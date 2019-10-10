@@ -30,12 +30,12 @@ Visit `localhost:1234` and life should be good.
 
 # How to customize sawhorse
 
-To see whats' going on, it's best to just take a look at `src/index.hbs`, then poke around the other folders/files in `src`.
+> To see what's going on, it's best to just take a look at `src/index.hbs`, then poke around the other folders/files in `src`.
 
 ## The setup
 
 * `/src` is for your [actual web pages](#making-new-pages)
-* `/src/html` is for your [HTML partials](#using-paritals)
+* `/src/html` is for your [HTML partials](#using-partials)
 * `/src/data` is for your [data files](#using-data)
 * `/src/scripts` is for your [JavaScript code](#using-javascript)
 * `/src/images` is for your [images](#using-images)
