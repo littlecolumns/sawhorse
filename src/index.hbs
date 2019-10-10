@@ -29,6 +29,12 @@
       {{> story/basic }}
 
       <!-- 
+        Charts are exactly the same.
+      -->
+
+      {{> story/chart }}
+
+      <!-- 
         If you want to use something exported from ai2html...
           1. Rename the exported .html file to .hbs
           2. Put the .hbs file inside of 'html/story'
@@ -42,12 +48,13 @@
         You can also put the actual HTML here if you really want to,
         although it's a little less organized looking
       -->
-
+      
       <div class="story-body">
-          <h2>Here is another section</h2>
-          <p>I can put text here, and a div underneath</p>
-          <div id="chart-1"></div>
+          <h2>Here is some body copy</h2>
+          <p>I can put code in <code>src/index.hbs</code> directly, but it's nicer to put it in a partial.</p>
       </div>
+
+
 
     </div>
 
@@ -56,9 +63,6 @@
 
   <!-- We'll always keep this JS files around -->
   <script src="scripts/vendor/ai2html-resizer.js"></script>
-
-  <!-- This is where you'll put your JavaScript files -->
-  <script src="scripts/chart-01.js"></script>
 
 </body>
 </html>
