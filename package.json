@@ -1,6 +1,6 @@
 {
   "name": "sawhorse",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A sturdy base to build D3 projects on",
   "main": "index.js",
   "scripts": {
