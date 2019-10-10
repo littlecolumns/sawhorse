@@ -129,13 +129,16 @@ If you have an Illustrator file you'd like to work on, move it into the `illustr
 When ai2html runs, it exports several files. For example, let's say I run ai2html on `illustrator/illustrator_demo.ai`, I'll get this list:
 
 ```
-ai2html-output/
-  illustrator_demo.hbs
-  images/
-    illustrator_demo-laptop.png
-    illustrator_demo-medium.png
-    illustrator_demo-mobile.png
+illustrator/
+  ai2html-output/
+    illustrator_demo.hbs
+    images/
+      illustrator_demo-laptop.png
+      illustrator_demo-medium.png
+      illustrator_demo-mobile.png
 ```
+
+> DO NOT KEEP THESE IMAGES INSIDE OF `illustrator`. You need to move them to `src/images` for them to work.
 
 If yours exports the web page as a `.html` file instead of an `.hbs` file, no problem - just rename it. You can have it always export an `.hbs` file by changing the `html_output_extension` option in the actual Illustrator file (the text block on the left).
 
@@ -151,6 +154,8 @@ Now you can include the partial on whatever page you'd like.
 Refresh your page, and the graphic should show up *and* be responsive *and* you didn't even have to edit any HTML!
 
 **Please note** that yours won't be called `illustrator_demo`. The filename isn't special, it's just the default because my Illustrator file was `illustrator_demo.ai`.
+
+> If you're getting an error that sawhorse can't find `src/filename.png`, it's because your ai2html export doesn't put the images into an `/images/` folder. Instead, it put them in the same folder as the HTML. You can fix this by editing the `img src="filename.png"` in your ai2html file to be `img src="images/filename.png"`
 
 # Publishing to GitHub Pages
 
