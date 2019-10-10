@@ -1,57 +1,53 @@
-<!doctype html>
-<html lang='en'>
-<head>
-  <link rel="stylesheet" href="styles/style.css">
-  {{> base/meta}}
-  {{> base/fonts }}
-  {{> base/analytics }}
-</head>
-<body>
-  <!-- The headline area pulls most of its content from data/meta.json -->
-  {{> base/headline }}
+---
+meta:
+    headline: "This title is from the top of index.hbs"
+    subhead: "If you deleted this section it would come from metadata/meta.json"
+    published_date: "January 1, 1970"
+    site: "http://www.littlecolumns.com"
+    siteName: "Little Columns"
+    url: "http://littlecolumns.com/learn/d3-javascript-tooling/"
+    kicker: "Little Columns Project Template"
+    author:
+        name: "Jonathan Soma"
+        url: "http://jonathansoma.com/"
+        twitterHandle: "@dangerscarf"
+    analytics": ""
+---
+<!-- 
+  This line means, use default.hbs layout from src/html/layouts/
+-->
 
-  <main id='content'>
+{{!< default}}
 
-      <!-- 
-        Put some content into an .hbs file inside of /partials, 
-        and you can just throw it in anywhere!
-      -->
-      
-      {{> story/basic }}
+<!-- 
+  Put some content into an .hbs file inside of /partials, 
+  and you can just throw it in anywhere!
+-->
 
-      <!-- 
-        Charts are exactly the same.
-      -->
+{{> story/basic }}
 
-      {{> story/chart }}
+<!-- 
+  Charts are exactly the same.
+-->
 
-      <!-- 
-        If you want to use something exported from ai2html...
-          1. Rename the exported .html file to .hbs
-          2. Put the .hbs file inside of 'html/story'
-          3. Move the exported images to the images folder
-          4. Include the partial normally like below
-       -->
+{{> story/chart }}
 
-      {{> story/illustrator_demo }}
+<!-- 
+  If you want to use something exported from ai2html...
+    1. Rename the exported .html file to .hbs
+    2. Put the .hbs file inside of 'html/story'
+    3. Move the exported images to the images folder
+    4. Include the partial normally like below
+  -->
 
-      <!--
-        You can also put the actual HTML here if you really want to,
-        although it's a little less organized looking
-      -->
-      
-      <div class="story-body">
-          <h2>Here is some body copy</h2>
-          <p>I can put code in <code>src/index.hbs</code> directly, but it's nicer to put it in a partial.</p>
-      </div>
+{{> story/illustrator_demo }}
 
-    </div>
+<!--
+  You can also put the actual HTML here if you really want to,
+  although it's a little less organized looking
+-->
 
-    {{> base/footer }}
-  </main>
-
-  <!-- We'll always keep this JS file around -->
-  <script src="scripts/vendor/ai2html-resizer.js"></script>
-
-</body>
-</html>
+<div class="story-body">
+    <h2>Here is some body copy</h2>
+    <p>I can put code in <code>src/index.hbs</code> directly, but it's nicer to put it in a partial.</p>
+</div>
