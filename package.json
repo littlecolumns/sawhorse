@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/littlecolumns/sawhorse#readme",
   "devDependencies": {
-    "@native_finance/parcel-plugin-handlebars": "^0.6.0",
     "acorn": "^7.1.0",
     "d3": "^5.12.0",
     "enter-view": "^2.0.0",
@@ -43,5 +42,7 @@
     "testcafe": "^1.5.0",
     "topojson": "^3.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@jsoma/parcel-plugin-handlebars": "^0.8.4"
+  }
 }
