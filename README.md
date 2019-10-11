@@ -9,7 +9,7 @@ You'll want to use the [sawhorse command-line interface](https://github.com/litt
 First you'll install sawhorse globally.
 
 ```
-npm install -g sawhorse
+npm install -g sawhorse-cli
 ```
 
 That will install the `sawhorse` command, which you can then use to create a new project. The command below will create a new `my-project` folder with a sawhorse template project inside.
